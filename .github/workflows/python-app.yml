@@ -15,3 +15,5 @@ jobs:
     - uses: jimkring/action-python-nogil@main
       with:
         requirements: "requirements.txt"
+      run: |
+        python -V
