@@ -4,6 +4,7 @@ name: Test on Nogil
 on:
   push:
     branches: [ "main" ]
+  workflow-dispatch:
 
 jobs:
   build:
