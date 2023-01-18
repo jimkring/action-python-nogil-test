@@ -17,3 +17,5 @@ jobs:
       with:
         requirements-file: requirements.txt
         command: python -V
+        command2: python test.py
+        
