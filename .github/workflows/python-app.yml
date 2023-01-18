@@ -1,0 +1,18 @@
+
+name: Test on Nogil
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: jimkring/action-python-nogil@main
+      with:
+        requirements: "requirements.txt"
